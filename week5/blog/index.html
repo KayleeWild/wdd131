@@ -11,16 +11,19 @@
 </head>
 <body>
     <header>
-        <h1>Kids Read for Fun</h1>
+        <div class="skiptocontent">
+            <a href="#maincontent">skip to main content</a>
+        </div>
+        <h1>Kids Read For Fun</h1>
         <nav>
-            <ul>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Archive">Archive</a></li>
-                <li><a href="#Search">Search</a></li>
+            <ul class="main-nav">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Archive</a></li>
+                <li><a href="#">Search</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="maincontent">
         <section id="blog-feed">
             <section class="book-listing">
                 <div class="left-pannel">
@@ -31,8 +34,10 @@
                 </div>
                 <div class="main-book-info">
                     <h2 class="book-title">Septimus Heap Book One: Magyk</h2>
-                    <img src="magyk.png" alt="Picture of the book being reviewed">
-                    <p class="book-review">If you enjoy stories about seventh sons of seventh sons and magyk is the book for you.</p>
+                    <div id="book-image">
+                        <img src="magyk.png" alt="Picture of the book being reviewed">
+                    </div>
+                    <br><p class="book-review">If you enjoy stories about seventh sons of seventh sons and magyk is the book for you.</p>
                     <a class="read-more" href="#Read-More">Read More ...</a>
                 </div>
             </section>
