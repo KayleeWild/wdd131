@@ -1,0 +1,123 @@
+form {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 200px;
+    /* position: absolute; */
+    width: 90%;
+    font-size: .9em;
+}
+
+#cardFront, #cardBack {
+    border-radius: 10px;
+    width: 310px;
+    height: 200px;
+    background-color: lightgray;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#cardFront {
+    box-shadow: 2px 2px rgb(128, 128, 128, 0.7);
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    /* row-gap: 20px; */
+}
+
+#cardBack {
+    position: relative;
+    top: -200px;
+    left: 100px;
+    z-index: -1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+}
+
+#buttonDiv {
+    position: relative;
+    top: -180px;
+    width: 550px;
+    margin: 0 auto;
+}
+
+button {
+    display: block;
+    margin: 0 0 0 auto;
+    width: 20%;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+}
+
+input, label {
+    width: 80%;
+    height: 60%;
+}
+
+label, p{
+    position: relative;
+    bottom: -15px;
+
+}
+/* grid stuff */
+#total {
+    grid-column: 1/2;
+}
+
+.card-image {
+    grid-column: 3/4;
+}
+
+#lnumber {
+    grid-row: 2/3;
+}
+#number{
+    grid-column: 1/4;
+    margin: 0;
+    grid-row: 3/4;
+}
+
+#lholder {
+    grid-row: 4/5;
+}
+#holder {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+#lexp-m {
+    grid-row: 4/5;
+    grid-column: 2/4;
+}
+#expiration-month {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    width: 60%;
+}
+
+#expiration-year {
+    grid-column: 3/4;
+    grid-row: 5/6;
+    width: 60%;
+}
+
+#magStrip {
+    grid-column: 1/3;
+    background-color: #444444;
+    width: calc(100% + 20px);
+    height: 60%;
+}
+
+#lcvc {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    margin: 0 0 0 10px;
+}
+
+#cvc {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    margin: 0 0 0 10px;
+    width: 70%;
+}
