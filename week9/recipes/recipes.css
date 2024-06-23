@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap');
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --HeaderFont: "Grandiflora One", sans-serif;
+    --BodyFont: Arial, Helvetica, sans-serif
+}
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+header {
+    height: fit-content;
+    padding-bottom: 30px;
+    border-bottom: 1px lightgrey solid;
+}
+#title {
+    margin: 10% auto;
+    width: fit-content;
+}
+header img {
+    height: 3em;
+}
+h1 {
+    display: inline;
+    font-size: 2em;
+}
+h1, h2 {
+    font-family: var(--HeaderFont);
+}
+#searchDiv {
+    height: 2rem;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border: 0.4px black solid;
+    border-radius: 5px;
+}
+#searchDiv input {
+    height: 20px;   
+    width: 100%;
+    padding: 5px;
+    border: none;
+    z-index: -1;
+}
+#searchDiv button {
+    height: 31px;
+    border: none;
+    border-left: 1px solid black;
+    z-index: -1;
+    background-color: white;
+}
+main {
+    width: 100%;
+    margin: 30px auto;
+}
+.recipeCard{
+    width: 75%;
+    margin: 0 auto;
+    border: grey solid 2px;
+    padding: 30px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
+.tags {
+    border: 2px grey solid;
+    width: fit-content;
+    margin: 10px auto 20px 0px;
+}
+.tags p {
+    padding: 5px 5px;
+    margin: 0;
+    font-size: 1.5rem;
+}
+.recipeCard h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin: 0;
+}
+.description {
+    display: none;
+}
+footer {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.social img {
+    width: 50px;
+    margin: 0 3px;
+}
+#attribution {
+    font-size: .8em;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: .2rem;
+}
+
+@media screen and (min-width:600px) {
+    #title {
+        margin-bottom: 20px;
+    }
+    #searchDiv {
+        width: 90%;
+    }
+    .recipeCard{
+        width: 90%;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .recipeCard img {
+        width: 50%;
+    }
+    .description {
+        display: block;
+    }
+    footer {
+        width: 95%;
+        margin: 0 auto 50px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+    }
+}
+@media screen and (min-width:960px) {
+    body {
+        max-width: 960px;
+    }
+}
