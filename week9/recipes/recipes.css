@@ -42,20 +42,25 @@ h1, h2 {
     align-items: center;
     border: 0.4px black solid;
     border-radius: 5px;
+
 }
-#searchDiv input {
+input {
     height: 20px;   
     width: 100%;
     padding: 5px;
     border: none;
-    z-index: -1;
+    cursor: text;
+    border-radius: 5px;
+
 }
-#searchDiv button {
+button {
     height: 31px;
     border: none;
     border-left: 1px solid black;
-    z-index: -1;
     background-color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
 }
 main {
     width: 100%;
@@ -63,7 +68,7 @@ main {
 }
 .recipeCard{
     width: 75%;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     border: grey solid 2px;
     padding: 30px;
     border-radius: 7px;
@@ -71,14 +76,16 @@ main {
     flex-direction: column;
 }
 .tags {
-    border: 2px grey solid;
+    
     width: fit-content;
     margin: 10px auto 20px 0px;
 }
 .tags p {
+    border: 2px grey solid;
     padding: 5px 5px;
-    margin: 0;
+    margin: 10px 5px;
     font-size: 1.5rem;
+    display: inline;
 }
 .recipeCard h2 {
     color: var(--primary-color);
