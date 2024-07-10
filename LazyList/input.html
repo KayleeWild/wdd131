@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy List</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="author" content="Kaylee Wright">
+    <meta name="description" content="This site provides people with a space to save their ideas for what to do with freetime (free time activities) when they have none. Then, to remember those ideas when they find a spare bit of time, they can search previously added activities.">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="javascript/main.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Search</a>
+            <img src="images/flat-logo.png" alt="lazy list logo">
+            <a href="input.html">Input</a>
+        </nav>
+    </header>
+    <main>
+        <p>We know you're busy, so we'll keep this quick. Fill out as many of the fields as you need to remember your free time activity for later.</p>
+        <section id="form-space">
+            <img src="images/beach-background.avif" alt="an orange and blue background that resembles a beach">
+            <h1>Lazy for Later</h1>
+            <form>
+                <fieldset class="required">
+                    <legend>Required Information</legend>
+                    <label for="name">Activity Name</label>
+                    <input type="text" name="name" id="name">
+                    <label for="desc">Description</label>
+                    <input type="text" name="desc" id="desc">
+                </fieldset>
+                <fieldset class="optional">
+                    <legend>Additional Information</legend>
+                    <label for="duration">Duration</label>
+                    <input type="text" name="duration" id="duration">
+                    <label for="cost">Cost</label>
+                    <p>$</p><select id="cost" name="cost">
+                        <option value="1">&lt 5 minutes</option>
+                        <option value="2">5-10 minutes</option>
+                        <option value="3">30 minutes</option>
+                        <option value="4">1 hour</option>
+                        <option value="5">2+ hours</option>
+                    </select>
+                    <label for="location">Location</label>
+                    <select name="location" id="location">
+                        <option value="inside">Inside</option>
+                        <option value="outside">Outside</option>
+                    </select>
+                    <label for="inspo">Inspo Link</label>
+                    <input type="url" name="inspo" id="inspo" placeholder="insert link to a post or image that gave you the inspiration for the activity">
+                </fieldset>
+                <div class="btn-block">
+                    <button type="submit" id="submitButton">List Activity</button>
+                </div>
+            </form>
+        </section>
+        
+    </main>
+    <footer>
+        <img src="images/flat-logo.png" alt="lazy list logo">
+        <section id="copyright">
+            <p>&copy; 2024 Lazy List. Kaylee Wright. All Rights Reserved.</p>
+        </section>
+    </footer>
+</body>
+</html>
