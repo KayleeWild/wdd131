@@ -108,6 +108,27 @@ footer img {
     font-size: .8rem;
     letter-spacing: .3rem;
 }
+/* Activity cards */
+.activity-card {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto 50px;
+    border: 1px solid var(--primary-color);
+    padding: 20px;
+}
+.activity-card h3 {
+    font-size: 1.5em;
+}
+.box {
+    display: inline;
+    margin: 0 40px 0 0;
+    border: 1px solid var(--primary-color);
+    padding: 0.5rem 1rem;
+    background-color: var(--accent2-color);
+}
+.activity-card a {
+    color: #0ea4b1;
+}
 /* Form page */
 .busy {
     margin: 40px auto;
@@ -121,7 +142,6 @@ form h1 {
 * {
     box-sizing: border-box;
 }
-div,
 form,
 input,
 select,

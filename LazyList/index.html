@@ -8,7 +8,7 @@
     <meta name="author" content="Kaylee Wright">
     <meta name="description" content="This site provides people with a space to save their ideas for what to do with freetime (free time activities) when they have none. Then, to remember those ideas when they find a spare bit of time, they can search previously added activities.">
     <link rel="stylesheet" href="styles/style.css">
-    <script src="javascript/main.js" type="module"></script>
+    <script src="./javascript/main.js" type="module"></script>
 </head>
 <body>
     <header>
@@ -20,14 +20,15 @@
     </header>
     <main>
         <div id="searchDiv">
-            <input type="text" placeholder="Find freetime fun..." name="search">
-            <button type="submit"><img src="images/search.svg" alt="search icon"></button>
+            <input id="searchInput" type="text" placeholder="Find freetime fun..." name="search">
+            <button id="searchButton" type="submit"><img src="images/search.svg" alt="search icon"></button>
         </div>
         <section id="replaceable">
             <img src="images/books.jpeg" alt="a cardboard rocket ship in front of a stack of books">
             <p>Why is it always when we have no spare time that our greatest ideas for emerge? And why is it that when we finally find ourselves with nothing to do, we can rack our brains but those ideas are nowhere to be found? You're busy enough as it is to try and keep track of all the things you want to do when you find the time. Here, you can make note of all the things you'd like to do when that elusive free time rolls around, and then come back to find them all safely waiting for you. Have some lazy time right now? Search through our idea gallery to get an idea of what to do. 
                 Too busy? Take a second to check out our input page and track one of your big ideas to come back for later.</p>
         </section>
+        <section id="replaced"></section>
     </main>
     <footer>
         <img src="images/big-logo.png" alt="lazy list logo">
