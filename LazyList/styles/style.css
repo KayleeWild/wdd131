@@ -213,4 +213,15 @@ input {
     background: var(--accent2-color);
     color: var(--primary-color);
 }
-  
+#more{
+    text-decoration: none;
+    color: #211924;
+    font-size: .7rem;
+    float: right;
+}
+#more:hover{
+    color: #FFFFFC;
+}
+#food-mood{
+    width: 50%;
+}
